@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTracker Pro - Your Fitness Journey Starts Here</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar--fixed">
+        <div class="navbar__container">
+            <h2 class="navbar__logo">FitTracker Pro</h2>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#hero" class="navbar__link">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#features" class="navbar__link">Features</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#counter-app" class="navbar__link">Try App</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#signup" class="navbar__link">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Track Your Fitness Journey</h1>
+            <p class="hero__description">
+                The ultimate app to monitor your workouts, count your reps, 
+                and achieve your fitness goals with precision and style.
+            </p>
+            <button class="btn btn--primary btn--cta" onclick="document.getElementById('counter-app').scrollIntoView()">
+                Try Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section section--light">
+        <div class="container">
+            <h2 class="section__title">Why Choose FitTracker Pro?</h2>
+            <div class="features">
+                <div class="card card--feature">
+                    <div class="card__icon">🏃‍♂️</div>
+                    <h3 class="card__title">Easy Tracking</h3>
+                    <p class="card__description">
+                        Simple and intuitive workout counter that never goes below zero. 
+                        Perfect for tracking push-ups, squats, and more.
+                    </p>
+                </div>
+                <div class="card card--feature">
+                    <div class="card__icon">📊</div>
+                    <h3 class="card__title">Real-time Updates</h3>
+                    <p class="card__description">
+                        Watch your progress update instantly with smooth animations 
+                        and visual feedback for every rep counted.
+                    </p>
+                </div>
+                <div class="card card--feature">
+                    <div class="card__icon">🎯</div>
+                    <h3 class="card__title">Goal Achievement</h3>
+                    <p class="card__description">
+                        Set your fitness targets and track your progress with our 
+                        smart counter system designed for motivation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Counter App -->
+    <section id="counter-app" class="section section--white">
+        <div class="container">
+            <h2 class="section__title">Try Our Workout Counter</h2>
+            <div class="counter">
+                <h3 class="counter__title">💪 Push-ups Counter</h3>
+                <div class="counter__display" id="counter-display">
+                    <span class="counter__value" id="counter-value">0</span>
+                </div>
+                <div class="counter__controls">
+                    <button class="btn btn--counter btn--decrement" id="decrement" title="Decrease count">
+                        -
+                    </button>
+                    <button class="btn btn--counter btn--reset" id="reset" title="Reset to zero">
+                        Reset
+                    </button>
+                    <button class="btn btn--counter btn--increment" id="increment" title="Increase count">
+                        +
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Form -->
+    <section id="signup" class="section section--light">
+        <div class="container">
+            <h2 class="section__title">Join FitTracker Pro Today</h2>
+            <form id="signup-form" class="form form--signup" novalidate>
+                <div class="form__group">
+                    <input type="text" id="name" name="name" class="form__input" required placeholder=" ">
+                    <label for="name" class="form__label">Full Name</label>
+                    <span class="form__error" id="name-error"></span>
+                </div>
+                
+                <div class="form__group">
+                    <input type="email" id="email" name="email" class="form__input" required placeholder=" ">
+                    <label for="email" class="form__label">Email Address</label>
+                    <span class="form__error" id="email-error"></span>
+                </div>
+                
+                <div class="form__group">
+                    <input type="tel" id="phone" name="phone" class="form__input" required placeholder=" ">
+                    <label for="phone" class="form__label">Phone Number</label>
+                    <span class="form__error" id="phone-error"></span>
+                </div>
+                
+                <div class="form__group">
+                    <input type="password" id="password" name="password" class="form__input" required placeholder=" ">
+                    <label for="password" class="form__label">Password (min 6 characters)</label>
+                    <span class="form__error" id="password-error"></span>
+                </div>
+                
+                <button type="submit" class="btn btn--primary btn--full">
+                    Start Your Fitness Journey
+                </button>
+            </form>
+            
+            <div id="success-message" class="message message--success" style="display: none;">
+                🎉 Welcome to FitTracker Pro! Registration successful! Check your email for next steps.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">FitTracker Pro</h3>
+                    <p class="footer__text">
+                        Your ultimate fitness companion for tracking workouts and achieving your goals.
+                    </p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Features</h3>
+                    <ul class="footer__list">
+                        <li><a href="#features" class="footer__link">Workout Counter</a></li>
+                        <li><a href="#features" class="footer__link">Progress Tracking</a></li>
+                        <li><a href="#features" class="footer__link">Goal Setting</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Support</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Help Center</a></li>
+                        <li><a href="#" class="footer__link">Contact Us</a></li>
+                        <li><a href="#" class="footer__link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Connect</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Twitter</a></li>
+                        <li><a href="#" class="footer__link">Instagram</a></li>
+                        <li><a href="#" class="footer__link">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 FitTracker Pro. All rights reserved. Built with passion for fitness.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
