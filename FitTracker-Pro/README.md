@@ -14,8 +14,7 @@ FitTracker-Pro/
 ├── styles.css          # External stylesheet with BEM methodology
 ├── script.js           # JavaScript functionality with ES6+ classes
 ├── README.md           # Project documentation
-└── assets/             # Optional: for future images/media
-    └── images/
+
 ```
 
 ## ✨ Features
