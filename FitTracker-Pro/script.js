@@ -340,7 +340,7 @@ class FormValidator {
     }
 }
 
-// =========================
+
 // NAVIGATION FUNCTIONALITY
 // =========================
 
@@ -357,7 +357,7 @@ class Navigation {
     }
 
     bindEvents() {
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for navigation link
         this.navLinks.forEach(link => {
             link.addEventListener('click', (e) => this.handleSmoothScroll(e));
         });
