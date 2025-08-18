@@ -270,6 +270,6 @@ For questions or suggestions about this project:
 - Open an issue in the repository
 - Check the browser console for debugging information
 - Ensure all files are in the same directory
-
+EMAIL:alainndizeye11@gmail.com
 ---
 
